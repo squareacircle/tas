@@ -1,0 +1,13 @@
+i32 main(int argc, i8[][] args)
+{
+	print("Enter a string to be repeated: ");
+	i8[100] str = read(i8[100]);
+
+	print("How many times should it be repeated: ");
+	ui32 n = read(ui32);
+
+	for (i32 i = 0; i < n; ++i)
+		print("{i8[]}\n", str);
+
+	return 0;
+}
