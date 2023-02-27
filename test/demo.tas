@@ -1,16 +1,19 @@
 /*
 	types {
-		char:   8  bit signed   integer
-		uchar:  8  bit unsigned integer
+		char:    8  bit signed   integer
+		uchar:   8  bit unsigned integer
 
-		short:  16 bit signed   integer
-		ushort: 16 bit unsigned integer
+		short:   16 bit signed   integer
+		ushort:  16 bit unsigned integer
 
-		int:    32 bit signed   integer
-		uint:   32 bit unsigned integer
+		int:     32 bit signed   integer
+		uint:    32 bit unsigned integer
 
-		long:   64 bit signed   integer
-		ulong:  64 bit unsgined integer
+		long:    64 bit signed   integer
+		ulong:   64 bit unsgined integer
+
+		float32: 32 bit floating point number
+		float64: 64 bit floating point number
 
 		* putting [] after each type makes it an array and adding more [] after it adds dimensions
 		* doing the same with with * makes the type a pointer and adding more * adds more dimensions
