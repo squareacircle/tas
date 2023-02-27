@@ -1,13 +1,44 @@
-i32 main(int argc, i8[][] args)
+/*
+	types {
+		char:   8  bit signed   integer
+		uchar:  8  bit unsigned integer
+
+		short:  16 bit signed   integer
+		ushort: 16 bit unsigned integer
+
+		int:    32 bit signed   integer
+		uint:   32 bit unsigned integer
+
+		long:   64 bit signed   integer
+		ulong:  64 bit unsgined integer
+
+		* putting [] after each type makes it an array and adding more [] after it adds dimensions
+		* doing the same with with * makes the type a pointer and adding more * adds more dimensions
+	}
+
+	built-in functions {
+		read(): reads things from stdin and returns them
+			* argument is the type you want to read. (e.g. int var = read(int) reads a 32 bit int from stdin)
+			* providing an array type with a size reads a max of that type from a single line from stdint with each number separated by a space. (e.g. short[20] var = read(short[20]))
+			* if you provide char[] then it will read a line with a max length of the size provided from stdin and return it as a string. (e.g. char[100] str = read(char[50]))
+
+		print(): prints formatted strings to stdout
+			* formats strings using {} as indicators. (e.g. print("Hello {}!", "world") and print("Number: {}", 12) and print("Number: {}", var))
+	}
+
+	things like if, for, while, do while, pointers and functions work the same way as C (except switch that doesn't exist in this language)
+*/
+
+int main(int argc, char[][] args)
 {
 	print("Enter a string to be repeated: ");
-	i8[100] str = read(i8[100]);
+	char[100] str = read(char[100]); // read(char[x]) reads a string
 
 	print("How many times should it be repeated: ");
-	ui32 n = read(ui32);
+	uint n = read(uint);
 
-	for (i32 i = 0; i < n; ++i)
-		print("{i8[]}\n", str);
+	for (uint i = 0; i < n; ++i)
+		print("{char[]}\n", str);
 
 	return 0;
 }
