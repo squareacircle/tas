@@ -3,7 +3,7 @@
 
 #include <stdint.h>
 
-#include "frontend/symbol_table.h"
+#include "symbol_table.h"
 
 typedef enum {
 	TOKEN_LEFT_PAREN,

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "frontend/symbol_table.h"
+#include "symbol_table.h"
 
 typedef struct symbol_table {
 	Symbol *hash_table;
